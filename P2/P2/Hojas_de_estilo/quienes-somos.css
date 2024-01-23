@@ -1,0 +1,156 @@
+.grid {
+    display: grid;
+    grid-template-columns: [x0] 2fr [x1] 3fr [x2] 3fr [x3]  3fr [x4] 2fr [x5];
+    grid-template-rows: [y0] 1fr [y1] 8fr [y2] 1fr;
+    width: 100%;
+    }
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #aedfe4;
+  }
+  
+  /* ENCABEZADO*/
+  .header {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #4e8d9c;
+    border-style: outset;
+    grid-column: x0/x5;
+    grid-row: y0;
+    padding: 2rem 0;
+    }
+  
+  .logo-head-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-head-container a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logo-head{
+    margin-left: 1.5%;
+    font-size: 1.3em;
+  }
+  
+  .navegacion ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navegacion ul li{
+    display: inline-block;
+  }
+  
+  .navegacion ul li a{
+    display: block;
+    padding: 2px 7px 2px 7px;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+  }
+  
+  .navegacion ul li a:hover{
+    color:white;
+    background-color:black;
+  }
+  
+  .botones ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .botones ul li{
+    display: inline-block;
+  }
+  
+  .boton-pers{
+    border: 1px solid #2e518b;
+    padding: 5px; 
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none; 
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    border-radius: 50px;
+  }
+  
+  .botones ul li a:hover{
+    color:white;
+    background-color:black;
+  }
+
+
+.parrafo{
+    grid-column: x0/x5;
+    grid-row: y1;
+}
+
+.parrafo h1{
+    text-align: center;
+}
+
+.parrafo p{
+    width: 60%;
+	margin: 0 auto;
+	padding: 20px;
+  font-size: larger;
+}  
+ 
+
+
+.logo-foot-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-foot{
+  margin-top: 1.7%;
+  margin-left: 1.5%;
+  font-size: 1.3em;
+}
+
+.logo-foot-container a{
+  color: white;
+  text-decoration: none;
+}
+
+.navegacion-foot ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navegacion-foot ul li{
+  display: inline-block;
+}
+
+.navegacion-foot ul li a{
+  display: block;
+  padding: 2px 7px 2px 7px;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+}
+
+.navegacion-foot ul li a:hover{
+  color: black;
+}
+
+.final{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background:#4e8d9c;
+    grid-column: x0 / x5;
+    grid-row: y2;
+  }
+.final a{
+  color: black;
+  float:right;
+  text-decoration: none;
+}
+    
